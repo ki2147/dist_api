@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: texteval-service
+                port:
+                  number: 80
+          - path: /api-docs
+            pathType: Prefix
+            backend:
+              service:
+                name: texteval-service
+                port:
+                  number: 80

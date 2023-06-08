@@ -1,0 +1,23 @@
+{
+  "name": "text_evaluator",
+  "version": "1.0.0",
+  "description": "A sample webapp which does text processing",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "express": "^4.18.2",
+    "natural": "^6.5.0",
+    "sentiment": "^5.0.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "author": "ki2147",
+  "license": "MIT"
+}

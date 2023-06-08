@@ -1,0 +1,45 @@
+{
+    "name": "ki2147-test-vnet",
+    "id": "/subscriptions/b1d946df-6199-4e60-bdad-eddb892ba9bb/resourceGroups/ki2147-test/providers/Microsoft.Network/virtualNetworks/ki2147-test-vnet",
+    "etag": "W/\"315eabeb-eb9a-41a8-a10f-519c4d5a45a7\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "southindia",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "a2b276b3-8d83-41f0-9b79-0fd1f0ee5396",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.224.0.0/12"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/b1d946df-6199-4e60-bdad-eddb892ba9bb/resourceGroups/ki2147-test/providers/Microsoft.Network/virtualNetworks/ki2147-test-vnet/subnets/default",
+                "etag": "W/\"315eabeb-eb9a-41a8-a10f-519c4d5a45a7\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.224.0.0/16",
+                    "networkSecurityGroup": {
+                        "id": "/subscriptions/b1d946df-6199-4e60-bdad-eddb892ba9bb/resourceGroups/ki2147-test/providers/Microsoft.Network/networkSecurityGroups/ki2147-vnet-nsg"
+                    }
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "texteval-aks-subnet",
+                "id": "/subscriptions/b1d946df-6199-4e60-bdad-eddb892ba9bb/resourceGroups/ki2147-test/providers/Microsoft.Network/virtualNetworks/ki2147-test-vnet/subnets/texteval-aks-subnet",
+                "etag": "W/\"315eabeb-eb9a-41a8-a10f-519c4d5a45a7\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.225.0.0/24",
+                    "networkSecurityGroup": {
+                        "id": "/subscriptions/b1d946df-6199-4e60-bdad-eddb892ba9bb/resourceGroups/ki2147-test/providers/Microsoft.Network/networkSecurityGroups/ki2147-vnet-nsg"
+                    }
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}

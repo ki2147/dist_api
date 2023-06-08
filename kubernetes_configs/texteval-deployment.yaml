@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: texteval-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: texteval
+  template:
+    metadata:
+      labels:
+        app: texteval
+    spec:
+      containers:
+        - name: texteval
+          image: ki2147/texteval:1.0
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NODE_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: env-config
+                  key: NODE_ENV
