@@ -126,6 +126,8 @@ Configure an ingress which will direct requests to the ClusterIP service we crea
 
 ### Create an API Management Instance to Serve as the Gateway to the App
 
+The goal is to set up an API Management instance in the same VNet as the AKS cluster. This allows us to avoid any Kubernetes nodes fom being exposed to the public. A reference document for this setup is https://learn.microsoft.com/en-us/azure/api-management/api-management-kubernetes. 
+
 Create a new Public IP address on Azure
 - Ensure that this IP address has a DNS name label configured - this is needed for the API Management instance
 
